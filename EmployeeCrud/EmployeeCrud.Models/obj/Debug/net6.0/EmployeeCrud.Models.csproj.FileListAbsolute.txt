@@ -1,0 +1,28 @@
+C:\Users\Nirmit Valand\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\bin\Debug\net6.0\EmployeeCrud.Models.deps.json
+C:\Users\Nirmit Valand\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\bin\Debug\net6.0\EmployeeCrud.Models.runtimeconfig.json
+C:\Users\Nirmit Valand\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\bin\Debug\net6.0\EmployeeCrud.Models.dll
+C:\Users\Nirmit Valand\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\bin\Debug\net6.0\EmployeeCrud.Models.pdb
+C:\Users\Nirmit Valand\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.csproj.AssemblyReference.cache
+C:\Users\Nirmit Valand\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nirmit Valand\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.AssemblyInfoInputs.cache
+C:\Users\Nirmit Valand\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.AssemblyInfo.cs
+C:\Users\Nirmit Valand\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.csproj.CoreCompileInputs.cache
+C:\Users\Nirmit Valand\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.dll
+C:\Users\Nirmit Valand\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\refint\EmployeeCrud.Models.dll
+C:\Users\Nirmit Valand\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.pdb
+C:\Users\Nirmit Valand\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.genruntimeconfig.cache
+C:\Users\Nirmit Valand\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\ref\EmployeeCrud.Models.dll
+C:\Users\Lenovo\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\bin\Debug\net6.0\EmployeeCrud.Models.deps.json
+C:\Users\Lenovo\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\bin\Debug\net6.0\EmployeeCrud.Models.runtimeconfig.json
+C:\Users\Lenovo\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\bin\Debug\net6.0\EmployeeCrud.Models.dll
+C:\Users\Lenovo\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\bin\Debug\net6.0\EmployeeCrud.Models.pdb
+C:\Users\Lenovo\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.dll
+C:\Users\Lenovo\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\refint\EmployeeCrud.Models.dll
+C:\Users\Lenovo\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.pdb
+C:\Users\Lenovo\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\EmployeeCrud.Models.genruntimeconfig.cache
+C:\Users\Lenovo\Desktop\NCoreSoft\EmployeeCrud\EmployeeCrud.Models\obj\Debug\net6.0\ref\EmployeeCrud.Models.dll

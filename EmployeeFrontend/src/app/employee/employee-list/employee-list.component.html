@@ -1,0 +1,42 @@
+<div class="container d-flex justify-content-center">
+  <button class="btn btn-dark w-25 m-3" (click)="addEmployee()">
+    Add Employee <i class="fa-solid fa-plus"></i>
+  </button>
+</div>
+<div class="container d-flex justify-content-center">
+    <h3 class=" mb-4 content">Employee Details</h3>
+  </div>
+  <div class="container">
+    <table class="table table table-bordered text-center">
+      <thead class="table-dark">
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Designation</th>
+          <th>Hobby</th>
+          <th>Email</th>
+          <th>Mobile Number</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let emp of employees">
+        <tr>
+          <td>{{ emp.name | titlecase }}</td>
+          <td>{{ emp.gender | titlecase }}</td>
+          <td >{{emp.designation.designationName }}</td>
+          <td><ol *ngFor="let data of emp.employeeHobbies">{{ data.hobby.hobbyName }}</ol></td>
+          <td>{{ emp.email }}</td>
+          <td>{{ emp.mobileNumber }}</td> 
+          <td>
+            <button class="btn btn-primary m-1" (click)="updateEmployee(emp)">
+              <i class="fa fa-pencil"></i>
+            </button>
+            <button class="btn btn-danger" (click)="deleteUser(emp.id)">
+              <i class="fa fa-trash"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="d-flex justify-content-center"></div>
+  </div>

@@ -1,0 +1,168 @@
+<form [formGroup]="addEmployeeForm" class="p-5 bg-light">
+    <h2 class="text-center fs-4">{{ isEditMode ? 'Update' : 'Add' }} Employee</h2>
+    <div class="form-group mt-4">
+      <div class="col-sm-10 w-100">
+        <label class="mb-1" for="name">Employee Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="Name"
+          placeholder="Enter employee name"
+          formControlName="Name"
+        />
+        <div
+          *ngIf="
+            addEmployeeForm.get('Name')?.invalid && addEmployeeForm.get('Name')?.touched
+          "
+        >
+          <span
+            class="mt -2 error-message"
+            *ngIf="(addEmployeeForm.get('Name')?.errors)!['required']"
+          >
+            Please enter employee name.
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group mt-4">
+      <div class="col-sm-10 w-100">
+        <label class="mb-1" for="email">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="Email"
+          placeholder="Enter email address"
+          formControlName="Email"
+          [attr.disabled]="isEditMode"
+        />
+        <div
+          *ngIf="
+            addEmployeeForm.get('Email')?.invalid &&
+            addEmployeeForm.get('Email')?.touched
+          "
+        >
+          <span
+            class="mt-2 error-message"
+            *ngIf="(addEmployeeForm.get('Email')?.errors)!['required']"
+          >
+            Email is required
+          </span>
+          <span class="mt-2 error-message" *ngIf="(addEmployeeForm.get('Email')?.errors)!['pattern']">
+            Email is invalid.
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group mt-4">
+      <div class="col-sm-10 w-100">
+        <label class="mb-1" for="mobileNumber">Mobile Number</label>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="MobileNumber"
+          id="mobileNumber"
+          placeholder="Enter mobile number"
+          pattern="[0-9]{10}"
+          maxlength="10"
+        />
+        <div
+          *ngIf="addEmployeeForm.get('MobileNumber')?.invalid && addEmployeeForm.get('MobileNumber')?.touched"
+        >
+          <span class="mt-2 error-message" *ngIf="(addEmployeeForm.get('MobileNumber')?.errors)!['required']">
+            Mobile number is required.
+          </span>
+          <span class="mt-2 error-message" *ngIf="(addEmployeeForm.get('MobileNumber')?.errors)!['pattern']">
+            Mobile number must be 10 digits.
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group mt-4">
+       
+        <div class="col-sm-10 w-100">
+            <label class="mb-1 m-2" for="stock">Gender</label>
+                <label class="m-2">
+                    <input type="radio" formControlName="Gender" value="male"> Male
+                </label>
+                
+                <label>
+                    <input type="radio" formControlName="Gender" value="female"> Female
+                </label>
+            <div
+            *ngIf="
+                addEmployeeForm.get('Gender')?.invalid && addEmployeeForm.get('Gender')?.touched
+            "
+            >
+            <span
+                class="mt-2 error-message"
+            >
+                Please Select gender.
+            </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group mt-4">
+       
+        <div class="mb-3">
+            <label class="mb-1" for="Designation">Select Designation</label>
+            <select class="form-control" formControlName="designationId" id="Designation">
+                <option *ngFor="let data of designations" [ngValue]="data.designationId">{{ data.designationName }}</option>
+              </select>
+            <div
+            *ngIf=" addEmployeeForm.get('Designation')?.invalid && addEmployeeForm.get('Designation')?.touched
+            "
+            >
+            <span
+                class="mt-2 error-message"
+            >
+                Please Select Designation.
+            </span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group mt-4">
+      <div class="col-sm-10 w-100">
+        <label class="mb-1 m-1" for="hobbies">Select Hobby</label>
+        <div formArrayName="EmployeeHobbies">
+          <div *ngFor="let data of hobbies; let i = index" class="form-check">
+            <input type="checkbox" [value]="data.hobbyId" (change)="setHobbiesInForm($event)" [checked]="isSelected(data.hobbyId)">
+            <label class="form-check-label">{{ data.hobbyName }}</label>
+          </div>
+        </div>
+        <div *ngIf="addEmployeeForm.get('EmployeeHobbies')?.invalid && addEmployeeForm.get('EmployeeHobbies')?.touched" class="text-danger mt-2">
+          Please select at least one hobby.
+        </div>
+      </div>
+    </div>
+    
+  
+  
+    <div mat-dialog-actions class="p-0 mt-3 d-flex justify-content-center">
+        <button
+          *ngIf="!isEditMode"
+          type="submit"
+          class="btn btn-dark buttons me-3"
+          (click)="addEmployee()"
+          [disabled]="addEmployeeForm.invalid"
+        >
+          Add
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button
+          *ngIf="isEditMode"
+          type="submit"
+          class="btn btn-dark buttons me-3"
+          (click)="onEdiEmployee()"
+          [disabled]="addEmployeeForm.invalid"
+        >
+          Update
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="btn btn-danger buttons" mat-dialog-close (click)="close()">
+          Close
+          <i class="fa-sharp fa-solid fa-close"></i>
+        </button>
+      </div>
+  </form>
+  
